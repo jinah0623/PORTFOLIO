@@ -1,0 +1,90 @@
+/* .list_page .pageheader {
+    font-size: 30px;
+    color: #2B2F49;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} */
+
+.list_page .board_tab {
+    position: relative;
+
+}
+
+.board_tab .conbox h3{
+    /* color: #2B2F49; */
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 40px;
+}
+
+.list_page .board_list table{
+    margin: auto;
+    width: 100%;
+    border: 2px solid #f5e7bf;
+}
+tr {
+    widows: 100%;
+    height: 40px;
+}
+
+tr th {
+    color: white;
+    border-right: 2px solid white;
+}
+
+tr th:last-child {
+    border-right: none;
+}
+
+.no {
+    width: 10%;
+}
+.title {
+    width:50%;
+}
+.author {
+    width: 10%;
+}
+
+.date {
+    width: 20%;
+}
+
+.hit {
+    width: 10%;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]+ label {
+    display: inline-block; 
+    padding: 20px; 
+    background: #ffecd2; 
+    color: #2B2F49;
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type="radio"]:checked+label {
+    background: #F7BF42;
+    color: white;
+}
+
+.conbox {
+    width: 65%;
+    height: 600px;
+    background: #F7BF42;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 0 3%;
+    display: none;
+}
+
+input[id="tab01"]:checked ~ .con1{
+    display: block;
+}
+input[id="tab02"]:checked ~ .con2{
+    display: block;
+}
